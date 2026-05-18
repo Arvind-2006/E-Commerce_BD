@@ -1,6 +1,6 @@
-//package com.app.ecommerce.config;
+package com.app.ecommerce.config;
 //
-//import com.app.ecommerce.security.JwtAuthFilter;
+import com.app.ecommerce.security.JwtAuthFilter;
 //import lombok.RequiredArgsConstructor;
 //import org.springframework.context.annotation.Bean;
 //import org.springframework.context.annotation.Configuration;
@@ -39,7 +39,7 @@
 //    }
 //}
 
-package com.app.ecommerce.config;
+//package com.app.ecommerce.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
