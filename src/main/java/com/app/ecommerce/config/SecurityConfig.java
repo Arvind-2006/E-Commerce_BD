@@ -1,6 +1,4 @@
-package com.app.ecommerce.config;
-//
-import com.app.ecommerce.security.JwtAuthFilter;
+
 //import lombok.RequiredArgsConstructor;
 //import org.springframework.context.annotation.Bean;
 //import org.springframework.context.annotation.Configuration;
@@ -40,7 +38,9 @@ import com.app.ecommerce.security.JwtAuthFilter;
 //}
 
 //package com.app.ecommerce.config;
+package com.app.ecommerce.config;
 
+import com.app.ecommerce.security.JwtAuthFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -89,7 +89,7 @@ public class SecurityConfig {
 
         CorsConfiguration configuration = new CorsConfiguration();
 
-        configuration.setAllowedOrigins(List.of(
+        configuration.setAllowedOriginPatterns(List.of(
                 "https://*.vercel.app"
         ));
 
