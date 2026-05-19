@@ -33,9 +33,8 @@ public class AuthService {
         user.setEmail(request.getEmail());
         user.setPassword(passwordEncoder.encode(request.getPassword()));
         user.setFullName(request.getFullName());
-//        user.setRole(Role.CUSTOMER); // Default role for new users
+        user.setRole(Role.CUSTOMER); // Default role for new users
 
-        user.setRole(Role.ADMIN);
         userRepository.save(user);
 
         // 3. Generate token right away for instant login after signup
